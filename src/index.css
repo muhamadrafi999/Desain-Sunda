@@ -1,0 +1,35 @@
+/* Google Fonts harus paling atas sebelum apapun */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset dasar */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f0e8;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Hapus gap antar section */
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variabel warna global */
+:root {
+  --krem:        #f5f0e8;
+  --krem-gelap:  #ede4d8;
+  --beige:       #e8d8c8;
+  --merah:       #7a1f2e;
+  --coklat-tua:  #3d1a1a;
+  --coklat-muda: #5a3a3a;
+}
