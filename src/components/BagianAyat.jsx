@@ -2,8 +2,13 @@ import { dataAyatQuran, dataAset } from '../data/dataUndangan'
 
 function BagianAyat() {
   return (
-    // Background krem muda - beda dari section sebelumnya
+    // Background foto landscape
     <section style={{ backgroundColor: '#f5f0e8', minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+
+      {/* Background foto landscape */}
+      <div style={{ position: 'absolute', inset: 0 }}>
+        <img src={dataAset.bgLandscape} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </div>
 
       {/* Bunga kiri atas */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '140px', zIndex: 5 }}>

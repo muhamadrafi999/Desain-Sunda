@@ -2,15 +2,14 @@ import { dataInstagramFilter, dataAset } from '../data/dataUndangan'
 
 function BagianInstagramFilter() {
   return (
-    // Background krem standar - beda dari LiveStreaming
-    <section style={{ backgroundColor: '#f5f0e8', minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 24px' }}>
+    // Background foto landscape
+    <section style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 24px' }}>
 
-      <div style={{ position: 'absolute', left: 0, top: '25%', width: '105px', opacity: 0.75 }}>
-        <img src={dataAset.semak} alt="" style={{ width: '100%' }} />
+      {/* Background foto landscape */}
+      <div style={{ position: 'absolute', inset: 0 }}>
+        <img src={dataAset.bgLandscape} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       </div>
-      <div style={{ position: 'absolute', right: 0, top: '25%', width: '105px', opacity: 0.75, transform: 'scaleX(-1)' }}>
-        <img src={dataAset.semak} alt="" style={{ width: '100%' }} />
-      </div>
+
       <div style={{ position: 'absolute', bottom: 0, left: 0, width: '130px' }}>
         <img src={dataAset.bunga3} alt="" style={{ width: '100%' }} />
       </div>

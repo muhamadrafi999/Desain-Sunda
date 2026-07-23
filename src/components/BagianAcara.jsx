@@ -1,17 +1,21 @@
 import { dataAcaraAkad, dataAcaraResepsi, dataAset } from '../data/dataUndangan'
 
 // Reusable kartu detail acara (Akad / Resepsi)
-function KartuAcara({ data, pohonSisi }) {
+function KartuAcara({ data, bgType }) {
   return (
-    <section style={{ backgroundColor: '#f5f0e8', minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <section style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
-      {/* Pohon */}
-      <div style={{ position: 'absolute', [pohonSisi]: 0, top: 0, bottom: 0, width: '130px', opacity: 0.75 }}>
-        <img src={dataAset.semak} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-      </div>
+      {/* Background conditional: foto untuk Akad, warna untuk Resepsi */}
+      {bgType === 'foto' ? (
+        <div style={{ position: 'absolute', inset: 0 }}>
+          <img src={dataAset.bgLandscape} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
+      ) : (
+        <div style={{ position: 'absolute', inset: 0, backgroundColor: '#faf6f0' }} />
+      )}
 
-      {/* Bunga sisi lain bawah */}
-      <div style={{ position: 'absolute', [pohonSisi === 'right' ? 'left' : 'right']: 0, bottom: 0, width: '110px' }}>
+      {/* Bunga sisi bawah */}
+      <div style={{ position: 'absolute', [bgType === 'foto' ? 'left' : 'right']: 0, bottom: 0, width: '110px' }}>
         <img src={dataAset.bunga1} alt="" style={{ width: '100%' }} />
       </div>
 
@@ -86,11 +90,11 @@ function BagianAcara() {
         </div>
       </section>
 
-      {/* Section: Akad Nikah */}
-      <KartuAcara data={dataAcaraAkad} pohonSisi="left" />
+      {/* Section: Akad Nikah - background foto landscape */}
+      <KartuAcara data={dataAcaraAkad} bgType="foto" />
 
-      {/* Section: Resepsi */}
-      <KartuAcara data={dataAcaraResepsi} pohonSisi="right" />
+      {/* Section: Resepsi - background warna seperti BagianMempelai */}
+      <KartuAcara data={dataAcaraResepsi} bgType="warna" />
     </>
   )
 }

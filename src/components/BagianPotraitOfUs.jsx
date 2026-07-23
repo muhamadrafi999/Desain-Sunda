@@ -4,8 +4,8 @@ function BagianPotraitOfUs() {
   const [foto1, foto2, foto3, foto4] = dataPotraitOfUs.foto
 
   return (
-    // Background krem standar
-    <section style={{ backgroundColor: '#f5f0e8', padding: '48px 20px 44px' }}>
+    // Background warna sama seperti BagianLiveStreaming (#faf6f0)
+    <section style={{ backgroundColor: '#faf6f0', padding: '48px 20px 44px' }}>
 
       {/* Judul - Great Vibes */}
       <h2 style={{ fontFamily: "'Great Vibes', cursive", fontSize: '46px', color: '#7a1f2e', marginBottom: '4px', textAlign: 'center' }}>

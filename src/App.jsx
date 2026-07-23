@@ -1,3 +1,4 @@
+import BagianCoverLandscape from './components/BagianCoverLandscape'
 import BagianCover from './components/BagianCover'
 import BagianAyat from './components/BagianAyat'
 import BagianMempelai from './components/BagianMempelai'
@@ -26,6 +27,7 @@ function App() {
       overflow: 'hidden',
       /* Tidak ada padding/gap supaya background section menyambung */
     }}>
+      <BagianCoverLandscape />
       <BagianCover />
       <BagianAyat />
       <BagianMempelai />

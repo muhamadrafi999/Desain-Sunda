@@ -39,8 +39,13 @@ function KartuDressCode({ data }) {
 
 function BagianDressCode() {
   return (
-    // Background krem muda standar
-    <section style={{ backgroundColor: '#f5f0e8', minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 24px' }}>
+    // Background foto landscape
+    <section style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 24px' }}>
+
+      {/* Background foto landscape */}
+      <div style={{ position: 'absolute', inset: 0 }}>
+        <img src={dataAset.bgLandscape} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </div>
 
       <div style={{ position: 'absolute', bottom: 0, left: 0, width: '150px' }}>
         <img src={dataAset.bunga3} alt="" style={{ width: '100%' }} />

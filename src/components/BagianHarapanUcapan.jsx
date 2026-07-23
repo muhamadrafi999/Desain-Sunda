@@ -21,8 +21,8 @@ function BagianHarapanUcapan() {
   }
 
   return (
-    // Background krem standar
-    <section style={{ backgroundColor: '#f5f0e8', position: 'relative', overflow: 'hidden' }}>
+    // Background warna sama seperti BagianWeddingGift (#ede4d8)
+    <section style={{ backgroundColor: '#ede4d8', position: 'relative', overflow: 'hidden' }}>
 
       {/* Ornamen ukiran atas */}
       <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '20px' }}>

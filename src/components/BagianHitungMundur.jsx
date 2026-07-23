@@ -28,8 +28,13 @@ function BagianHitungMundur() {
   ]
 
   return (
-    // Background krem standar
-    <section style={{ backgroundColor: '#f5f0e8', minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    // Background foto landscape
+    <section style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+
+      {/* Background foto landscape */}
+      <div style={{ position: 'absolute', inset: 0 }}>
+        <img src={dataAset.bgLandscape} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </div>
 
       {/* Pohon kiri */}
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '100px', opacity: 0.75 }}>

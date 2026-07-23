@@ -10,16 +10,6 @@ function BagianCoverAkhir() {
         <img src={dataAset.semak} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }} />
       </div>
 
-      {/* Pohon kiri atas */}
-      <div style={{ position: 'absolute', top: 0, right: 0, width: '140px', opacity: 0.85 }}>
-        <img src={dataAset.semak} alt="" style={{ width: '100%' }} />
-      </div>
-
-      {/* Pohon kanan atas */}
-      <div style={{ position: 'absolute', top: 0, left: 0, width: '140px', opacity: 0.85, transform: 'scaleX(-1)' }}>
-        <img src={dataAset.semak} alt="" style={{ width: '100%' }} />
-      </div>
-
       {/* Bunga bawah kiri */}
       <div style={{ position: 'absolute', bottom: 0, left: 0, width: '150px', zIndex: 10 }}>
         <img src={dataAset.bunga3} alt="" style={{ width: '100%' }} />

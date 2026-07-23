@@ -21,12 +21,12 @@ function KartuMempelai({ data, bunga, posisiBunga }) {
         {data.namaLengkap}
       </h2>
 
-      {/* Keterangan orang tua - Poppins */}
+      {/* Keterangan orang tua */}
       <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px', color: '#5a3a3a', textAlign: 'center', marginBottom: '12px', padding: '0 12px' }}>
         {data.namaOrangTua}
       </p>
 
-      {/* Badge Instagram - tidak redirect, hanya tampilan */}
+      {/* Badge Instagram*/}
       <button
         style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: '#7a1f2e', color: '#fff', borderRadius: '999px', padding: '6px 16px', fontFamily: "'Poppins', sans-serif", fontSize: '12px', border: 'none', cursor: 'default' }}
       >
@@ -41,7 +41,7 @@ function KartuMempelai({ data, bunga, posisiBunga }) {
 
 function BagianMempelai() {
   return (
-    // Background krem lebih terang - beda dari BagianAyat
+    // Background krem lebih terang 
     <section style={{ backgroundColor: '#faf6f0', minHeight: '100vh', position: 'relative', overflow: 'hidden', padding: '64px 24px 64px' }}>
 
       <KartuMempelai data={dataMempelai.wanita} bunga={dataAset.bunga2} posisiBunga="kiri" />

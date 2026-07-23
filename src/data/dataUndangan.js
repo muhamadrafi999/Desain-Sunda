@@ -124,4 +124,5 @@ export const dataAset = {
   semak: "/aset/hiasan/semak-1.jpeg",
   batasSection: "/aset/hiasan/batas-section.png",
   bgSurat: "/aset/hiasan/bg-surat.jpeg",
+  bgLandscape: "/aset/background/background-2.jpeg",
 };
