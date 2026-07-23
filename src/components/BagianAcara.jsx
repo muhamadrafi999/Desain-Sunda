@@ -40,15 +40,12 @@ function KartuAcara({ data, pohonSisi }) {
           {data.alamat}
         </p>
 
-        {/* Tombol */}
-        <a
-          href={data.linkPeta}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 500, backgroundColor: '#7a1f2e', color: '#fff', borderRadius: '999px', padding: '10px 48px', textDecoration: 'none' }}
+        {/* Tombol Lihat Peta - tidak redirect */}
+        <button
+          style={{ fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 500, backgroundColor: '#7a1f2e', color: '#fff', borderRadius: '999px', padding: '10px 48px', border: 'none', cursor: 'default' }}
         >
           Lihat Peta
-        </a>
+        </button>
       </div>
     </section>
   )

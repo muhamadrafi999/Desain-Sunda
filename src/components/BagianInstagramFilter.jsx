@@ -30,15 +30,12 @@ function BagianInstagramFilter() {
           <img src={dataInstagramFilter.foto} alt="instagram filter" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
         </div>
 
-        {/* Tombol */}
-        <a
-          href={dataInstagramFilter.linkFilter}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ fontFamily: "'Poppins', sans-serif", fontSize: '14px', fontWeight: 500, backgroundColor: '#7a1f2e', color: '#fff', borderRadius: '999px', padding: '12px 60px', textDecoration: 'none' }}
+        {/* Tombol Gunakan - tidak redirect */}
+        <button
+          style={{ fontFamily: "'Poppins', sans-serif", fontSize: '14px', fontWeight: 500, backgroundColor: '#7a1f2e', color: '#fff', borderRadius: '999px', padding: '12px 60px', border: 'none', cursor: 'default' }}
         >
           Gunakan
-        </a>
+        </button>
       </div>
     </section>
   )

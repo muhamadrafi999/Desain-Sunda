@@ -89,14 +89,11 @@ function BagianHitungMundur() {
 
         {/* Tombol kalender */}
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
-          <a
-            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Bryan+%26+Anne&dates=20250120T020000Z/20250120T060000Z"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px', color: '#3d1a1a', border: '1px solid #7a1f2e', borderRadius: '999px', padding: '7px 24px', textDecoration: 'none' }}
+          <button
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px', color: '#3d1a1a', border: '1px solid #7a1f2e', borderRadius: '999px', padding: '7px 24px', backgroundColor: 'transparent', cursor: 'default' }}
           >
             Tambah ke Kalender
-          </a>
+          </button>
         </div>
       </div>
     </section>
